@@ -16,7 +16,7 @@ export default class Cart {
   }
 
   sumWithDiscount(discount: number): number {
-    const sumWithoutDiscount = this.items.reduce((acc, prevValue) => acc + prevValue.price, 0);
+    const sumWithoutDiscount = this.sumWithDiscount;
     return sumWithoutDiscount - sumWithoutDiscount * discount / 100;
   }
 
